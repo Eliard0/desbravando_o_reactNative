@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, SafeAreaView } from 'react-native';
-import Quadrado from './src/components/layout/Quadrado';
+import Mega from './src/components/mega-senha/Mega'
+// import FlexBox from './src/components/layout/FlexBox';
+// import Quadrado from './src/components/layout/Quadrado';
 // import DigitandoNome from './src/DigitandoNome';
 // import ListaProdutosV2 from './src/components/produtos/ListaProdutosV2';
 // import ListaProdutos from './src/components/produtos/listaProdutos';
@@ -15,8 +17,9 @@ import Quadrado from './src/components/layout/Quadrado';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Quadrado cor='#000'/>
+      <Mega qtdeNumeros={12}/>
       {/* <DigitandoNome></DigitandoNome> 
+      <FlexBox></FlexBox>
        <ListaProdutosV2></ListaProdutosV2> 
        <ListaProdutos></ListaProdutos> 
        <Pai/> 
